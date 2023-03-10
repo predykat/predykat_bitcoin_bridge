@@ -1,0 +1,1 @@
+# Predykat bitcoin bridge

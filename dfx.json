@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "canisters": {
+    "predykat_bitcoin_bridge": {
+      "type": "custom",
+      "package": "predykat_bitcoin_bridge",
+      "candid": "src/predykat_bitcoin_bridge/predykat_bitcoin_bridge.did",
+      "wasm": "target/wasm32-unknown-unknown/release/predykat_bitcoin_bridge.wasm.gz",
+      "build": "src/predykat_bitcoin_bridge/build.sh"
+    }
+  },
+  "defaults": {
+    "bitcoin": {
+      "enabled": true,
+      "nodes": [
+        "127.0.0.1:18444"
+      ],
+      "log_level": "info"
+    },
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:4943"
+    }
+  }
+}
